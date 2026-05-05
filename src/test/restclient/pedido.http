@@ -1,0 +1,30 @@
+@base=http://localhost:8081/pedido
+
+### Obter um pedido
+GET {{base}}/1
+
+### Obter todos os pedidos
+GET {{base}}
+
+### Criar um pedido
+POST {{base}}
+Content-Type: application/json
+
+{
+    "descricao": "Compra de eletrônicos 2",
+    "data": "2024-05-15",
+    "clienteId": 1
+}
+
+### Atualizar um pedido
+PUT {{base}}/1
+Content-Type: application/json
+
+{
+    "descricao": "Compra de eletrônicos para escritório (Urgente)",
+    "data": "2024-05-15",
+    "clienteId": 2
+}
+
+### Deletar um pedido
+DELETE {{base}}/2

@@ -1,0 +1,32 @@
+@base=http://localhost:8081/cliente
+
+### Obter um cliente
+GET {{base}}/1
+
+### Obter todos os clientes
+GET {{base}}
+
+### Criar um cliente
+POST {{base}}
+Content-Type: application/json
+
+{
+    "name": "Chapa",
+    "birth": "1995-08-20",
+    "cpf": "111.222.333-44",
+    "endereco": "Av. Paulista, 1000"
+}
+
+### Atualizar um cliente
+PUT {{base}}/1
+Content-Type: application/json
+
+{
+    "name": "Chapa King",
+    "birth": "1995-08-20",
+    "cpf": "111.222.333-44",
+    "endereco": "Av. Paulista, 1000 - Apto 55"
+}
+
+### Deletar um cliente
+DELETE {{base}}/2

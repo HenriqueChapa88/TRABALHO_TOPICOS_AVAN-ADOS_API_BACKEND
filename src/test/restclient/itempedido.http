@@ -1,0 +1,33 @@
+@base=http://localhost:8081/itempedido
+
+### Obter um item do pedido
+GET {{base}}/1
+
+### Obter todos os itens
+GET {{base}}
+
+### Criar um item de pedido
+POST {{base}}
+Content-Type: application/json
+
+{
+    "pedidoId": 2,
+    "produtoId": 1,
+    "quantidade": 4,
+    "valorUnitario": 3500.00
+}
+
+### Atualizar um item de pedido
+PUT {{base}}/1
+Content-Type: application/json
+
+{
+    "pedidoId": 1,
+    "produtoId": 1,
+    "quantidade": 3,
+    "valorUnitario": 3200.00
+}
+
+### Deletar um item de pedido
+DELETE {{base}}/2
+

@@ -1,0 +1,30 @@
+@base=http://localhost:8081/contrato
+
+### Obter um contrato
+GET {{base}}/1
+
+### Obter todos os contratos
+GET {{base}}
+
+### Criar um contrato
+POST {{base}}
+Content-Type: application/json
+
+{
+    "descricao": "Contrato OG 2",
+    "dataContrato": "2024-05-16",
+    "pedidoId": 2
+}
+
+### Atualizar um contrato
+PUT {{base}}/1
+Content-Type: application/json
+
+{
+    "descricao": "Contrato de Garantia Estendida Premium REAL OG",
+    "dataContrato": "2024-05-16",
+    "pedidoId": 1
+}
+
+### Deletar um contrato
+DELETE {{base}}/5

@@ -1,0 +1,36 @@
+###TESTES COM USUÁRIOS
+@base=http://localhost:8081/user
+
+### Obter um usuário 
+GET {{base}}/3
+
+### Obter todos usuários
+GET {{base}}
+
+### Obter todos usuários
+GET {{base}}
+
+### Criar um usuário
+POST {{base}}
+Content-Type: application/json
+
+{
+    "name": "k4",
+    "email": "42@gmail.com",
+    "password": "1234",
+    "birth": "2004-10-03"
+}
+
+### Atualizar um usuário
+PUT {{base}}/3
+Content-Type: application/json
+
+{
+    "name": "Roberto Carlos",
+    "email": "roberto@gmail.com",
+    "password": "12345",
+    "birth": "2004-02-12"
+}
+
+###Deletar um usuário
+DELETE {{base}}/1

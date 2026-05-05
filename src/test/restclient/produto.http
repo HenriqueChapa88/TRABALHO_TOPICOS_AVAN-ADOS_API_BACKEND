@@ -1,0 +1,30 @@
+@base=http://localhost:8081/produto
+
+### Obter um produto
+GET {{base}}/1
+
+### Obter todos os produtos
+GET {{base}}
+
+### Criar um produto
+POST {{base}}
+Content-Type: application/json
+
+{
+    "nome": "GTA 7",
+    "descricao": "GTA 6 - Ultimo lancamento",
+    "valor": 3500.00
+}
+
+### Atualizar um produto
+PUT {{base}}/1
+Content-Type: application/json
+
+{
+    "nome": "Smartphone Galaxy S",
+    "descricao": "Celular topo de linha 512GB",
+    "valor": 4200.00
+}
+
+### Deletar um produto
+DELETE {{base}}/2
