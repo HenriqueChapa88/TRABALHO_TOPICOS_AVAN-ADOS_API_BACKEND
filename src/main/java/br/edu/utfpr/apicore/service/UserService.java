@@ -11,7 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import br.edu.utfpr.apicore.dto.UserDTO;
-import br.edu.utfpr.apicore.exception.NotFoundException;
+import br.edu.utfpr.apicore.exceptions.NotFoundException;
 import br.edu.utfpr.apicore.model.User;
 import br.edu.utfpr.apicore.repository.UserRepository;
 import jakarta.validation.Valid;

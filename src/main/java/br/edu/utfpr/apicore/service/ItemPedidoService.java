@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.utfpr.apicore.dto.ItemPedidoDTO;
-import br.edu.utfpr.apicore.exception.NotFoundException;
+import br.edu.utfpr.apicore.exceptions.NotFoundException;
 import br.edu.utfpr.apicore.model.ItemPedido;
 import br.edu.utfpr.apicore.repository.ItemPedidoRepository;
 import br.edu.utfpr.apicore.repository.PedidoRepository;

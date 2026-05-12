@@ -1,4 +1,4 @@
-package br.edu.utfpr.apicore.exception;
+package br.edu.utfpr.apicore.exceptions;
 
 import java.util.HashMap;
 import java.util.Map;

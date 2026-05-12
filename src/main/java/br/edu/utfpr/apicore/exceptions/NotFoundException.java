@@ -1,4 +1,4 @@
-package br.edu.utfpr.apicore.exception;
+package br.edu.utfpr.apicore.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
