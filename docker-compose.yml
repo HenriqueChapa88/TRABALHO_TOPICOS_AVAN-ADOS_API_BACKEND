@@ -1,12 +1,12 @@
 services:
-  webapp:
+  springboot:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: webapp
+    container_name: springboot
     restart: unless-stopped
     ports:
-      - "90:80"
+      - "80000:8080"
     networks:
       - devops_net
 
